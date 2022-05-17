@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- link de bootstrap siempre va primero -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style_landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Lato:ital,wght@1,100&display=swap" rel="stylesheet">
+    
+    <title>bootstrap exercise + landing page</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><h1>JUNHØ Photograpy</h1></a>
+            <button class="navbar-toggler .navbar-default .navbar-toggle.collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon .navbar-default .navbar-toggle.collapsed"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="https://www.instagram.com/junhochak/">Instagram</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://linktr.ee/junhochak">Linkr</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://unsplash.com/es/@junhochak" tabindex="-1" aria-disabled="true">Unplash</a>
+              </li>
+            </ul>
+      </nav>
+      
+
+                <img class="img-fluid" src="./images/junhoFotografiaPortada.jpg" alt="camaraDeFotos">
+          <p>Junhochak</p>
+      
+
+
+    <!-- Galeria de fotos linkeadas a paginas -->
+    <article>
+        <div id="container"> <!-- flex container -->
+            <div class="row"><!-- Ejercicio con grillas -->
+            <div class="col-sm-12">
+              <a href="https://unsplash.com/es/fotos/3L7Ll-b4Q-8?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"><img  class="itemFLex" src="./images/personaEnBanco.jpg" alt="persona en banco"></a>
+              <a href="https://unsplash.com/es/fotos/sa-vtLJQhbM"><img class="itemFLex " src="./images/junho-YkFG3_GC-yI-unsplash.jpg" alt="inframe con vista a edificio"></a>
+              <a href="https://unsplash.com/es/fotos/JkiumxkmGMM"><img class="itemFLex " src="./images/farol.jpg" alt="farol"></a>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <a href="https://unsplash.com/es/fotos/izXcLnh1yq0"><img class="itemFLex " src="./images/justInTime.jpg" alt="pesona caminando"></a>
+                <a href="https://unsplash.com/es/fotos/c0bXHSsNwLw"><img class="itemFLex "src="./images/pajarosEnVuelo.jpg" alt="pajarosEnVuelo"></a>
+                <a href="https://unsplash.com/es/fotos/Fs7IgJpXgqA"><img class="itemFLex " src="./images/puente.jpg" alt="puente y persona en bicicleta"></a>
+              </div>
+            </div>
+             <div class="row">
+              <div class="col-sm-12">
+                 <a href="https://unsplash.com/es/fotos/MTBbwWpUQQc"><img class="itemFLex " src="./images/spider.jpg" alt="spider"></a>
+                 <a href="https://unsplash.com/es/fotos/uhf3vuYjemo"><img class="itemFLex" src="./images/streetView.jpg" alt="streetView"></a>
+                 <a href="https://unsplash.com/es/fotos/VrKLH1WCzSk"><img class="itemFLex" src="./images/viewBoys.jpg" alt="viewBoys"></a>
+              </div>
+             </div>
+            </div>
+      </div>
+    <!-- ejercicio agregar botones -->
+       <!--  <input class="btn btn-primary btn-success">
+        <button type="button" class="btn btn-secondary btn-success">Button</button>-->
+      </article>
+
+      <div class="card mb-3 bg-transparent border-0 alinear style=" width: 15rem;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="https://images.unsplash.com/profile-fb-1544779859-aa49dcdd9a34.jpg?dpr=2&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff" class="circular alinear no-gutters" alt="junho perfil">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body text-center">
+              <p class="parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, quaerat libero!</p>
+             <a href="./formsBootstrap.html" class="btn btn-dark btn-success">Ejercicio de forms</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+  <div class="d-grid gap-2">
+    <button class="btn btn-dark btn-success" type="button"><a id="IdColor" href="https://unsplash.com/es/">Unplash.com</a></button>
+  </div>
+<!-- js y pooper bootstrap SIEMPRE VAN AL FINAL DEL BODY-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
