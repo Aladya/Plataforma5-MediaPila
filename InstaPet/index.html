@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="shortcut icon" href="./favicon.ico"/>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+<img src="./InstaPet1.png" width="180" height="180">
+ <nav align="right">
+    <ul>
+     <li>Acerca de nosotros</li>
+     <a href="mailto:alethiagmkjh@gmail.com"target="_blank" rel="noopener noreferrer" subject=Quiero%20saber%20sobre%20InstaPet>Contacto</a>
+    </ul>
+ </nav>
+</head>
+<body>
+<main >
+ <h1>InstaPet</h1>
+ <h4>La red social para tus mascotas.</h4>
+ <p>Bienvenid@ a InstaPet! Somos una comunidad en la que tu mascota es la protagonista! Subi sus fotos videos y compartelos con miles de usuarios en InstaPet.</p>
+</main>
+ <h2 >¡Unete!</h2>
+<span class="formulario">
+       <form action="https://formspree.io/f/xzbojrnz" method="post">
+     <label for="username">¿Cual es el nombre de tu mascota? </label>
+     <br>
+     <input id="username" placeholder="name" type="text" name="nombre"  required>
+     <br>
+     <label for="mail">email:</label>
+     <br>
+     <input id="mail" type="email" placeholder="mail" required>
+     <br>
+     <label for="contra">Contraseña:</label>
+     <br>
+     <input id="contra" placeholder="password" type="password" name="contraseña" required>
+     <br>
+     <label>Hembra</label>
+     <input type="radio" name= "genero" value="Hembra" required>
+     <label>Macho</label>
+     <input type="radio" name= "genero" value="Macho" required>
+     <br>
+    <label for="pet_color">¿De que color es?</label>
+     <br>
+     <input id="pet_color" type="color" required>
+     <br>
+     <select name="Tipo de mascota">
+        <option>Gato</option>
+        <option>Perro</option>
+        <option>Cobayo</option>
+        <option>Otro</option>
+     </select>
+     <br>
+     <label for="bday_day">¿Cuando nacio tu mascota?</label>
+     <br>
+     <input type="date" required>
+     <br>
+     <label for="pic">Subi una foto de tu mascota:</label>
+     <br>
+     <input id="pic" type="file">
+     <br>
+     <label>Cuentanos como es tu mascota:</label><br>
+     <textarea placeholder="Escribe aqui lo que quieras contar sobre tu mascota" rows="10" cols="40"></textarea><br>
+    <label>Acepto las bases y condiciones.</label>
+     <input type="checkbox" name="bases/condiciones" value="Acepta"></input>
+     <input type="submit" id="enviar">
+  </form>
+</span>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis modi earum rerum in aspernatur sapiente, fugiat blanditiis voluptatibus corrupti repudiandae, quia distinctio iure facere eius totam ad, sit,Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis modi earum rerum in aspernatur sapiente, fugiat blanditiis voluptatibus corrupti repudiandae, quia distinctio iure facere eius totam ad, sitLorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis modi earum rerum in aspernatur sapiente, fugiat blanditiis voluptatibus corrupti repudiandae, quia distinctio iure facere eius totam ad</p>
+<p>fugiat blanditiis voluptatibus corrupti repudiandae, quia distinctio iure facere eius totam ad, sit,Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis modi earum rerum in aspernatur sapiente, fugiat blanditiis voluptatibus corrupti repudiandae, quia distinctio iure facere eius totam ad,iis corporis modi earum rerum in aspernatur sapiente, fugiat blanditiis voluptatibus corrupti repudiandae</p>
+<p><strong>Cosas que podras encontrar en InstaPet</strong></p>
+  <span class="frames">
+    <iframe align="right" width="160" height="95" src="https://www.youtube.com/embed/noAGPQbdsRI" title="Gatos graciosos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209319.04893801583!2d-58.58475777174784!3d-34.941313296010975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd2cadd8a2229f%3A0x4d219358ba4e73fc!2sVeterinaria%20%22Del%20Sol%22!5e0!3m2!1ses-419!2sar!4v1649798144932!5m2!1ses-419!2sar" width="300" height="150" style="border: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </span>
+  
+<footer>Since 2022.All rights reserved.</footer>
+</body>
+</html>
