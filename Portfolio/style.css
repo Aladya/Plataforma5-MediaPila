@@ -1,7 +1,10 @@
 body
 {
-    background-color: rgb(236, 241, 240);
+    /* background-color: rgb(236, 241, 240); */
+    background-image: url(https://images.wallpaperscraft.com/image/single/dark_spots_texture_background_50355_1600x1200.jpg);
+    background-size: 100% 60%;/* background-repeat: */
     font-family: 'Abel', sans-serif;
+    /* background-size: cover; */
     color: #355c65;
     /* background: linear-gradient(rgb(30, 191, 121), rgb(50, 89, 196));  */
 }
@@ -13,6 +16,7 @@ body
     margin: 4vh 3vh;
 
 }
+
 
 .navbar-nav .nav-link 
 {
@@ -32,13 +36,24 @@ border-radius: 5px;
 {
     background-image: url(./image/favicon-32x32.png);
     background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.2s linear;
+    border: none;
+}
+.navbar-toggler:hover{
+    opacity: 0.9;
+    transform: scale(1.1);
+    border: none;
+}
+.navbar-toggler::after{
+    border: none;
 }
 
 
 .letraInicio
 {
     font-family: 'Unica One', cursive;
-    color: rgb(95, 196, 157);
+    color: rgba(95, 196, 157, 0.558);
     /* font-family: 'Barlow Condensed', sans-serif; */
 /*     font-family: 'Sirin Stencil', cursive; */
 }
@@ -72,26 +87,43 @@ p .cardTexto
 }
 
 /* portfolio */
-.portfolio
-{
- 
-  margin-top: 3vw;
-  padding: 10px;
-  padding:1vw;
-  height:100vh;
-}
+
 
 .img-fluid:hover
 {
  z-index: -1;
  filter: brightness(0.8);
 }
+.col-sm-4{
+    width: 400px;
+    overflow: hidden;
 
-.container
+}
+
+
+.portfolio
 {
-    justify-content: space-evenly;
-    height: 100%;
-    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.portfolio div{
+    height: 200px;
+    background-color:rgba(154, 177, 174, 0.233);
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 5 0 12 -2 rgba(40, 134, 110, 0.757);
+    margin-left: -120px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+.portfolio div:hover{
+    transform: translateY(-16px); rotate:(3deg);
+}
+.portfolio div:hover ~ div{
+    transform: translateX(130px);
 }
 /* <!-- Acerca de mi --> */
 hr
@@ -112,9 +144,9 @@ h2, h3
     text-transform: uppercase;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 6vw;
+    text-shadow:3px  #2dafa8;
 
 }
-
 
 input
 {
@@ -124,11 +156,12 @@ input
 /* contacto */
 .contacto
 {
-background-color: rgb(220, 235, 235);
+background-color: rgba(81, 85, 104, 0.436) !important;
 font-family: 'Carrois Gothic SC', sans-serif;
-box-shadow: 0 25px 30px -6px #6b6969;
+box-shadow: 0 25px 30px -6px #cccccc;
 color: #28938e;
 }
+
 input, textarea
 {
     background-color:rgba(86, 234, 195, 0.099)!important;
@@ -149,6 +182,9 @@ button.btn:hover
     color: rgba(150, 238, 67, 0.628);
     border-color: rgba(127, 220, 45, 0.608);
 }
+.boton{
+    background-color: rgba(138, 218, 63, 0.628) !important;
+}
 /* end contacto */
 
 /* Redes sociales */
@@ -161,7 +197,8 @@ button.btn:hover
 li
 {
     text-align: center;
-    list-style:none
+    list-style:none;
+    cursor: pointer;
 }
 .Iconos
 {
@@ -171,6 +208,7 @@ li
     border-radius: 4em;
     width: 3vw;
     height:3vw;
+    transition-delay: 0.25s;
 }
 
 .Iconos:hover
@@ -180,10 +218,19 @@ li
     border-radius: 4em;
     width: 3vw;
     height:3vw;
+    transform: scale(0);
+    transition: 300ms;
 }
-a.referenciaIconos
+
+.Iconos:hover:after
 {
-    color: #32697d;
+    opacity: 1;
+    transform: scale(1.15);
+}
+.referenciaIconos, footer
+{
+    color: #46959a;
+    
 }
 a.referenciaIconos::after
 {
@@ -193,4 +240,3 @@ a.referenciaIconos:hover
 {
     color: rgba(171, 236, 41, 0.836);
 }
-

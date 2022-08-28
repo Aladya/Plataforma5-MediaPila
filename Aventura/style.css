@@ -1,0 +1,47 @@
+body
+{
+    background-color: #393838;
+    font-family: 'Roboto Mono', monospace;
+    color: #8f908f;
+    backface-visibility: initial;
+}
+h1
+{
+    text-align: center;
+    color: #3216d5;
+    font-family: 'Tapestry', cursive;
+}
+button
+{
+  padding: 9px;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #2e3131;
+  box-shadow: 0 5px 3px -2px rgba(158, 157, 157, 0.2);
+  color: rgb(230, 228, 228);
+  text-transform: uppercase;
+  margin-left: 23%;
+}
+.sinopsis
+{
+ padding: 0 , 53px;
+ background-color: rgb(213, 204, 193);
+ margin: 20px 30px 20px 30px;
+ box-shadow:0 7px 10px 0 rgb(101, 85, 74);
+ color:#8f908f;
+}
+
+div
+{
+    margin: 4%;
+    text-align: center;
+    background-color: #4c4b4b;
+    box-shadow:0 25px 30px -6px #6b6969;
+    color: #c6c6c6;
+}
+.chat
+{
+    font-style: italic;
+    color: rgb(68, 19, 19);
+}

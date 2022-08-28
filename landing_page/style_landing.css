@@ -1,0 +1,157 @@
+* { box-sizing: border-box; }
+body
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: rgb(236, 233, 233) !important;
+}
+div
+{
+    /* width: 80%; ejercicio fotografo */
+    /* max-width: 20%; */
+    height: auto;
+    margin:1vw auto;
+    padding-top: 5vh;
+}
+
+article img
+{
+    border-top: 1vh;
+    margin: 1%;
+    max-width: 30%;
+    margin-left: 1em;
+    
+}
+article
+{
+    color: aliceblue;
+}
+/* .cambiarAltura
+{
+    height: 50%;
+    flex-grow: 2;
+} */
+h1
+{
+    display: inline;
+    color: rgb(236, 235, 233);
+    margin-left: 1.4%;
+    font-size: 40px;
+    font-family: 'Koulen', cursive;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(125, 60, 60);
+    width: 30%;
+    padding-top: 2vh 0vh;
+}
+
+.btn-success
+{
+    background-color: rgb(46, 46, 45);
+    margin-left: 2em;
+}
+.btn-success:hover
+{
+    color: rgb(125, 60, 60)
+}
+
+.navbar-brand
+{
+    color: antiquewhite;
+}
+.nav-link
+{
+    color: rgb(244, 243, 242) !important;
+}
+.navbar-default .navbar-toggle.collapsed 
+{
+    border-color: white;
+}
+  
+.navbar-default .navbar-toggle
+{
+   border-color: white;
+}
+.img-fluid
+{
+    max-width: 91% ;
+    height: 20%;
+    transform: scale(1.2,1.4) !important;
+    /* imagen blureada y sin que afecte los bordes con scale/overflow */
+    /* filter: blur(3px); hace img borrosa*/
+    overflow: hidden;
+    margin: 4em 4em;
+
+    
+}
+.img-fluid:hover
+{
+    filter:saturate(45%)
+}
+
+.img-fluid:active
+{
+    filter: blur(2px);
+}
+p
+{
+    display: float;
+    position:absolute;
+    bottom: 16px;
+    text-overflow: ellipsis;
+    padding: 5px;
+    width: 100%;
+    color: aliceblue;
+    font-size: 100px;
+    font-family: 'Koulen', cursive;
+    text-align:center !important;
+    
+}
+
+/* style de card */
+.card-body > .parrafo
+{
+ font-size: small;
+ padding-top: 9vh;
+ color: grey;
+ text-align: left;
+ text-indent: 69em;
+}
+
+.circular
+{
+    border-radius: 50%;
+    margin-top: 9em;
+    margin-left: 0%;
+}
+/* end */
+
+.alinear
+{
+ align-content:flex-start;
+ margin-left: 3vh;
+ 
+}
+
+
+  /* Boton de abajo tipo footer link a image source */
+  #IdColor
+  {
+        color: rgb(244, 243, 242);
+  }
+      
+      #IdColor:hover
+      {
+        color: rgb(110, 69, 69);
+        background-color: rgb(21, 21, 21);
+      }
+      
+      #IdColor:active
+      {
+        color: rgb(59, 39, 44);
+      }
+nav
+{
+    position: fixed;
+    z-index: 1;
+}
+
+
